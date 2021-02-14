@@ -1,20 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Sharven's Website!</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="shortcut icon" type="image/x-icon" href="resources/Pixel.png">
+    </style>
+  </head>
+  <script type="text/javascript" src="index.js"></script>
+  <body onload="loadPage()">
+    <a name="top"></a>
+    <div style="width:100%; padding-top: 5%;">
+      <div class="nav-bar">
+        <h1 id="sharvenTitle" class="header">
+          <span style="color:green">~$ </span><span id="cursor">_</span>
+          
+        </h1>
+        <p style="text-align: left" class="subtitle-text" id="underTitle">Software Development | Machine Learning | Web Development</p>
+        <div class="image-cropper">
+          <img id="SharvenImage" src="resources/Sharven Prasad - Picture.jpg" alt="Sharven">
+        </div>
+      </div>
 
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>Sharven Prasad Dhanasekar</title>
-
-  <link rel="stylesheet" href="css/styles.css">
-
-</head>
-
-<body>
-  <script src="js/scripts.js"></script>
-
-  <h2>Welcome to my site!</h2>
-
-</body>
+      <div class="nav-bar-box">
+        <p id="underTitle" class="body-text">
+          Currently a 3rd year Computer Science student at the University of Toronto, Mississauga.
+          <br>
+          <br>
+          Passionate about developing apps, exploring the field of Machine Learning, and designing webpages (like this one)!
+          <br>
+          <br>
+          <img src="resources/github.png" width="1%"> <a href="https://github.com/sharvenp">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="resources/linkedin.png" width="1%"> <a href="https://www.linkedin.com/in/sharven-prasad-dhanasekar/">LinkedIn</a>
+          <br>
+          <br>
+          I use GitHub to showcase my projects and the things I've worked on.
+          <br>
+          <br>
+          Some of my notable projects:
+          <br>
+          <br>
+        </p>
+      </div>
+      <div class="nav-bar-box">
+        <p id="underTitle" class="subtitle-text">
+          <span style="color:green">~$ </span>./Sentimuse
+          <p id="underTitle" class="body-text" style="padding-top: 0;">
+            Developed an AI model that understands the positive/negative sentiment in text and generates music that fits the sentiment!
+            <br>
+            <br>
+            The AI uses a Sentiment Analysis model to first understand the sentiment of the text and then based on the sentiment, it picks the music generation model that is trained to generate music specific to that sentiment.
+            <br>
+            <br>
+            The Sentiment Analysis model consists of a bi-directional GRU RNN that creates an embedding of the given text and then passes this embedding into a Fully-Connected Neural Net that classifies the sentiment.
+            <br>
+            <br>
+            The music generation model generates uses a GRU to generate the <a href="https://abcnotation.com/learn">ABC-notation</a> which is then converted into a .midi file using the <a href="http://abc.sourceforge.net/abcMIDI/original/">abc2midi</a> library. 
+            <br>
+            <br>
+            More information can be found at our <a href="https://github.com/grumpypenny/sentiment-analysis-and-music-generation">GitHub repository</a>.
+            <br>
+            <br>
+            Sentimuse used to have a website, but it is no long active (rip Azure Web Service free trial).
+          </p>
+          <img src="resources/sentimuse.png" alt="sentimuse" width="100%" style="border: 3px solid black; border-radius: 20px;">
+          <p id="underTitle" class="body-text" style="padding-top: 0;">
+            Some music the AI had generated:
+            <br>
+            <div>
+              <p id="underTitle" class="body-text" style="padding-top: 0;">Positive Sentiment Music:</p>
+              <audio src="resources/happy.mp3" controls></audio>
+              <p id="underTitle" class="body-text" style="padding-top: 0;">Negative Sentiment Music:</p>
+              <audio src="resources/sad.mp3" controls></audio>
+            </div>
+        </p>
+          <br>
+          <br>
+          <hr class="horizontal_line">
+          <br>
+          <br>
+      </div>
+      <div class="nav-bar-box">
+        <p id="underTitle" class="subtitle-text">
+          <span style="color:green">~$ </span>./Self_Steering_Car
+          <p id="underTitle" class="body-text" style="padding-top: 0;">
+            Developed an AI agent that learned how to steer a car along a randomly generated race track using Reinforcement Learning.
+            <br>
+            <br>
+            Reinforcement Learning is the process of training an agent to complete a task purely by supplying it rewards/punishment. If the agent does something that is desired, it receives a positive reward. Alternatively, if it does something that isn't desired, it receives a punishment (negative reward).
+            <br>
+            <br>
+            This may sound familiar, and that's because this is exactly how animals and humans learn!
+            <br>
+            <br>
+            With a lot of Statistics and Calculus, we can convert this idea to train and AI agent in a similar fashion to steer a virtual track. Essentially, if the AI reaches the end of the track, it receives a large positive reward, and if it hits the edge of the track, it receives a negative reward.
+            <br>
+            <br>
+            There are many algorithms out there to perform Reinforcement Learning and the algorithm used in the project is called Policy Gradients. In a nutshell, tries to search for an optimal policy that dictates its actions at certain states as  the agent explores random moves. 
+            <br>
+            <br>
+            Learn more about the project at my <a href="https://github.com/sharvenp/self-steering-car">GitHub repository</a>.
+            <br>
+            <br>
+            Here is how the AI performs after running the simulation 6000 times on a track I drew in paint:
+          </p>
+          <img src="resources/self_steer.gif" alt="self steering car" width="50%"  style="border: 3px solid black; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;">
+          <br>
+          <br>
+          <hr class="horizontal_line">
+          <br>
+          <br>
+      </div>
+      <div class="nav-bar-box">
+        <p id="underTitle" class="subtitle-text">
+          <span style="color:green">~$ </span>./Tunez
+          <p id="underTitle" class="body-text" style="padding-top: 0;">
+            I was tired with using the Windows built-in media player, so I created a simple music player in Java using JavaFX.
+            <br>
+            <br>
+            It supports playing .mp3 and .wav files and all the basic media operations (play, pause, track seeking, etc.) and also supports creating local music playlists.
+            <br>
+            <br>
+            The app also features an audio spectrum visualizer and metadata parsing where it displays metadata such as album art, genre, artist, etc.
+          </p>
+          <img src="resources/tunez.png" alt="tunez" width="60%"  style="border: 3px solid black; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;">
+          <p id="underTitle" class="body-text" style="padding-top: 0;">
+            Learn more about the project at my <a href="https://github.com/sharvenp/Tunez">GitHub repository</a>.
+          <br>
+          <br>
+            <hr class="horizontal_line">
+          </p>
+          <br>
+          <br>
+      </div>
+    </div>
+  </body>
 </html>
