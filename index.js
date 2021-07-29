@@ -7,7 +7,7 @@ function loadPage() {
     setTimeout(function myLoop() {
         setTimeout(function () {
             acc += name.charAt(i)
-            document.getElementById('sharvenTitle').innerHTML = "<span style='color:green'>~$ </span>" + acc + "<span id='cursor'>_</span>";
+            document.getElementById('sharvenTitle').innerHTML = "<span class='green'>~$ </span>" + acc + "<span id='cursor'>_</span>";
             i = i + 1;
             if (i < name.length) myLoop(i)
         }, 33);
@@ -18,7 +18,7 @@ function loadPage() {
 
 function blinkCursor() {
     var cursor = true;
-    var speed = 500;
+    var speed = 250;
     setInterval(() => {
         if (cursor) {
             document.getElementById('cursor').style.opacity = 0;
