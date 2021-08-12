@@ -34,13 +34,13 @@
         Machine Learning | Web Development</p>
     </div>
 
-    <div class="image-cropper flex m-0 m-auto text-center">
+    <div class="image-cropper flex m-0 m-auto text-center animated bounce">
       <img id="sharven-image" src="resources/Pixel.png" alt="Sharven">
     </div>
 
     <div class="m-0 m-auto w-75">
       <p class="text-responsive-body white white mt-5 pt-2">
-        Currently a 3rd year Computer Science student at the University of Toronto, Mississauga.
+        Currently a Undergraduate Computer Science student at the University of Toronto, Mississauga.
         <br>
         <br>
         Passionate about developing apps, exploring the field of Machine Learning, and designing webpages (like this
@@ -71,15 +71,13 @@
         preferences in music, video games, movies, and humour.
         <br>
         <br>
-        We implemented various features where users can create profiles, chat with other users, form groups with other
-        users, and many more. We also added Spotify API integration where users can log into their Spotify accounts and
-        we would automatically pull their top 5 most listened artists and display them on their profile.
+        We implemented various features where users can create profiles, chat with other users, form groups, and many more. We also added Spotify API integration where users can log into their Spotify accounts and display their top 5 most listened artists on their profile.
         <br>
         <br>
         For the matching algorithm, we used the unsupervised machine learning algorithm, K-means. We essentially form
         clusters of users in space and to generate matches for a user, we just return all users in that cluster. We also
         allow the user to specify how specific they want their matches to be, and based on this specificity, we choose a
-        certain k-value for the K-means model and return the matches accordingly.
+        certain k-value for the K-means model to return the matches accordingly.
         <br>
         <br>
         Our website is still up, so sign-up <a href="https://uoftalk.herokuapp.com/">here!</a>.
@@ -138,28 +136,26 @@
       <p class="text-responsive-subtitle font-weight-bold white">
         <span class="green">~$ </span>./Sentimuse
       <p class="text-responsive-body white" style="padding-top: 0;">
-        Developed an AI model that understands the positive/negative sentiment in text and generates music that fits the
-        sentiment!
+        Developed an AI model that understands the positive/negative sentiment in text and generates music that fits the sentiment!
         <br>
         <br>
         The AI uses a Sentiment Analysis model to first understand the sentiment of the text and then based on the
-        sentiment, it picks the music generation model that is trained to generate music specific to that sentiment.
+        sentiment, it picks a pre-trained music generation model to generate music specific to that sentiment.
         <br>
         <br>
-        The Sentiment Analysis model consists of a bi-directional GRU RNN that creates an embedding of the given text
-        and then passes this embedding into a Fully-Connected Neural Net that classifies the sentiment.
+        The Sentiment Analysis model consists of a bi-directional GRU Recurrent Neural Network (RNN) that creates an embedding of the given text and then passes this embedding into a fully-connected Neural Net that classifies the sentiment.
         <br>
         <br>
         The music generation model generates uses a GRU to generate the <a
           href="https://abcnotation.com/learn">ABC-notation</a> which is then converted into a .midi file using the <a
-          href="http://abc.sourceforge.net/abcMIDI/original/">abc2midi</a> library.
+          href="http://abc.sourceforge.net/abcMIDI/original/">abc2midi</a> library for playing.
         <br>
         <br>
         More information can be found at our <a
           href="https://github.com/grumpypenny/sentiment-analysis-and-music-generation">GitHub repository</a>.
         <br>
         <br>
-        Sentimuse used to have a website, but it is no long active (rip Azure Web Service free trial).
+        Sentimuse used to have a website, but it is no long active (Azure free trial expired ☹).
       </p>
       <img src="resources/sentimuse/sentimuse.png" alt="sentimuse" width="100%"
         style="border: 3px solid black; border-radius: 20px;">
@@ -191,13 +187,13 @@
         This may sound familiar, and that's because this is exactly how animals and humans learn!
         <br>
         <br>
-        With a lot of Statistics and Calculus, we can convert this idea to train and AI agent in a similar fashion to
+        With a lot of Statistics and Calculus, we can convert this idea to train an AI agent in a similar fashion to
         steer a virtual track. Essentially, if the AI reaches the end of the track, it receives a large positive reward,
         and if it hits the edge of the track, it receives a negative reward.
         <br>
         <br>
         There are many algorithms out there to perform Reinforcement Learning and the algorithm used in the project is
-        called Policy Gradients. In a nutshell, tries to search for an optimal policy that dictates its actions at
+        called Policy Gradients. In a nutshell, it tries to search for an optimal policy that dictates its actions at
         certain states as the agent explores random moves.
         <br>
         <br>
@@ -219,12 +215,10 @@
         JavaFX.
         <br>
         <br>
-        It supports playing .mp3 and .wav files and all the basic media operations (play, pause, track seeking, etc.)
-        and also supports creating local music playlists.
+        It supports playing .mp3 and .wav files, and all the basic media operations (play, pause, track seeking, etc.). It also supports creating local playlists.
         <br>
         <br>
-        The app also features an audio spectrum visualizer and metadata parsing where it displays metadata such as album
-        art, genre, artist, etc.
+        The app also features an audio spectrum visualizer and metadata parsing where it displays metadata such as album art, genre, artist, etc.
       </p>
       <img src="resources/tunez/tunez.png" alt="tunez" width="65%"
         style="border: 3px solid black; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;">
