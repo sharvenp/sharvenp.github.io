@@ -24,7 +24,7 @@ Learn more about the project at this [GitHub repository](https://github.com/shar
 After running the simulation 6000 times, here is how the AI agent performs on a track I drew in paint:
 
 <div style="text-align: center">
-  <img  width="600" src="/img/projects/self-steer/self_steer.gif" alt="AI agent steering car along track after training 6000 times"/>
+  <img  width="600" src="/images/projects/self-steer/self_steer.gif" alt="AI agent steering car along track after training 6000 times"/>
 </div>
 
 Some next steps would be to load this model onto a Raspberry Pi and have it control a small toy car using ultrasonic sensors.

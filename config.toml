@@ -14,7 +14,7 @@ author = "Sharven Prasad Dhanasekar"
 description = "Sharvens's personal website"
 keywords = "programmer,developer,personal"
 info = ["Computer Science Specialist @ University of Toronto"]
-avatarURL = "img/avatar.png"
+avatarURL = "images/avatar.png"
 dateFormat = "Jan 2006"
 since = 2018
 # Right To Left, shift content direction for languages such as Arabic

@@ -21,7 +21,7 @@ We implemented various features where users can create profiles, chat with other
 For the matching algorithm, we used the unsupervised machine learning algorithm, K-means. We essentially form clusters of users in different dimensions of space and to generate matches for a user, we fetch all users within that cluster. We also allow the user to specify how granular they want their matches to be, and based on this specificity, we choose a certain k-value for the K-means model to return the matches according to the new space.
 
 <div style="text-align: center">
-  <img  src="/img/projects/uoftalk/uoftalk_login.png" alt="UofTalk login page"/>
+  <img  src="/images/projects/uoftalk/uoftalk_login.png" alt="UofTalk login page"/>
 </div>
 
 For more details and screenshots, please visit the [GitHub repository](https://github.com/manuboojuk/MAYPASS-UofTalk).
