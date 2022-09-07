@@ -9,7 +9,7 @@ tags = [
 draft = false
 +++
 
-Developed an AI model that understands the positive/negative sentiment in text and generates music that fits the sentiment!
+Developed an AI model as part of an independent research course that understands the positive/negative sentiment in a given piece of text and generates music that fits the sentiment!
 
 The AI uses a Sentiment Analysis model to first understand the sentiment of the text and then based on the sentiment, it picks a pre-trained music generation model to generate music specific to that sentiment.
 
@@ -27,10 +27,10 @@ Sentimuse used to be hosted on a website, but it is no long active (Azure free t
 
 Some sample music the AI had generated:
 
-Positive Sentiment Music:
+Positive sentiment music:
 
 <audio src="/audio/sentimuse/happy.mp3" controls></audio>
 
-Negative Sentiment Music:
+Negative sentiment music:
 
 <audio src="/audio/sentimuse/sad.mp3" controls></audio>
