@@ -1,6 +1,6 @@
 +++
 title = "About"
-description = "About Sharven"
+description = "About me"
 aliases = ["about", "contact"]
 author = "Sharven Prasad Dhanasekar"
 +++
