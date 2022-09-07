@@ -19,7 +19,7 @@ Now about this app, it is a dead-simple markdown editor live previews the markdo
 Here is an example markdown file in md.it:
 
 <div style="text-align: center">
-  <img  src="/img/projects/md.it/demo-pic.png" alt="md.it screenshot"/>
+  <img  src="/images/projects/md.it/demo-pic.png" alt="md.it screenshot"/>
 </div>
 
 Visit the [GitHub repo](https://github.com/sharvenp/md.it) for more information, and feel free to [download](https://github.com/sharvenp/md.it/releases) it and try it out!

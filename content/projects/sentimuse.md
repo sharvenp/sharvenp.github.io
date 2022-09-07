@@ -22,7 +22,7 @@ More information can be found at our [GitHub repository](https://github.com/grum
 Sentimuse used to be hosted on a website, but it is no long active (Azure free trial expired 😔).
 
 <div style="text-align: center">
-  <img  src="/img/projects/sentimuse/sentimuse.png" alt="Sentimuse home page"/>
+  <img  src="/images/projects/sentimuse/sentimuse.png" alt="Sentimuse home page"/>
 </div>
 
 Some sample music the AI had generated:
