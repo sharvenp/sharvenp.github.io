@@ -19,7 +19,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE
-      - name: Checkout
+      - name: Checkout branch
         uses: actions/checkout@v2
         with:
           submodules: true # Fetch Hugo themes
